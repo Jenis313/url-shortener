@@ -38,8 +38,8 @@ urlForm.addEventListener('submit', (e) => {
         let copyBtn = document.querySelector('.copy-btn')
         copyBtn.addEventListener('click', (e) => {
             console.log('clicked');
-            copyFunc(data.result.short_link)
-            copyBtn.classList.add('copied')
+            copyFunc(data.result.short_link);
+            copyBtn.classList.add('copied');
             copyBtn.innerHTML = 'Copied';
             e.preventDefault();
         })
